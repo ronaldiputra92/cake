@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko-Kue</title>
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fas fa-shopping-basket"></i>Toko Kue</a
+      >
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Shop</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="sliders-container">
+        <div class="slide active">
+          <div class="content">
+            <span>Dapatkan Diskon Setiap Minggu</span>
+            <h2>Diskon Hingga 50%</h2>
+            <a href="#" class="btn">Order Sekarang</a>
+          </div>
+          <div class="img">
+            <img src="images/cake1.jpg" alt="Kue 1" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>Dapatkan Diskon Setiap Minggu</span>
+            <h2>Diskon Hingga 60%</h2>
+            <a href="#" class="btn">Order Sekarang</a>
+          </div>
+          <div class="img">
+            <img src="images/cake2.jpg" alt="Kue 1" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>Dapatkan Diskon Setiap Minggu</span>
+            <h2>Diskon Hingga 70%</h2>
+            <a href="#" class="btn">Order Sekarang</a>
+          </div>
+          <div class="img">
+            <img src="images/cake3.jpg" alt="Kue 1" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>Dapatkan Diskon Setiap Minggu</span>
+            <h2>Diskon Hingga 20%</h2>
+            <a href="#" class="btn">Order Sekarang</a>
+          </div>
+          <div class="img">
+            <img src="images/cake4.jpg" alt="Kue 1" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>Dapatkan Diskon Setiap Minggu</span>
+            <h2>Diskon Hingga 40%</h2>
+            <a href="#" class="btn">Order Sekarang</a>
+          </div>
+          <div class="img">
+            <img src="images/cake5.jpg" alt="Kue 1" />
+          </div>
+        </div>
+      </div>
+      <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+      <div id="prev-slide" class="fas fa-angle-left" onclick="prev()"></div>
+    </section>
+
+    <section class="banner-container">
+      <div class="banner">
+        <img src="images/banner1.jpg" alt="" />
+        <div class="content">
+          <span>Stock terbatas</span>
+          <h2>Diskon Hingga 50%</h2>
+          <a href="#" class="btn">Order Sekarang</a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="images/banner2.jpg" alt="" />
+        <div class="content">
+          <span>Stock terbatas</span>
+          <h2>Diskon Hingga 50%</h2>
+          <a href="#" class="btn">Order Sekarang</a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="images/banner3.jpg" alt="" />
+        <div class="content">
+          <span>Stock terbatas</span>
+          <h2>Diskon Hingga 50%</h2>
+          <a href="#" class="btn">Order Sekarang</a>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Surganya Pecinta Kue</h1>
+      <p>
+        "Dari brownies lembut, tart buah segar, hingga cake kekinian yang cantik
+        — kami punya segalanya! Jangan sampai ketinggalan, datang dan cicipi
+        hari ini!"
+      </p>
+    </div>
+    <section class="category">
+      <h1 class="title">
+        Latest<span> Category</span><a href="#">View All>></a>
+      </h1>
+      <div class="box-container">
+        <a href="#" class="box">
+          <img src="images/banner1.jpg" alt="" />
+          <h2>Fresh Cupcake</h2>
+        </a>
+        <a href="#" class="box">
+          <img src="images/banner2.jpg" alt="" />
+          <h2>Cookies</h2>
+        </a>
+        <a href="#" class="box">
+          <img src="images/banner3.jpg" alt="" />
+          <h2>Dark Chocolate</h2>
+        </a>
+        <a href="#" class="box">
+          <img src="images/cake1.jpg" alt="" />
+          <h2>Brown Cupcake</h2>
+        </a>
+        <a href="#" class="box">
+          <img src="images/cake2.jpg" alt="" />
+          <h2>Wheat</h2>
+        </a>
+      </div>
+    </section>
+
+    <section class="products">
+      <h1 class="title">
+        Latest <span>Products</span><a href="#">View All>></a>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/cake3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Mirror glaze cake</h3>
+            <div class="price">Rp. 85.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/cake4.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Biskuit Butir Coklat</h3>
+            <div class="price">Rp. 35.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/cake5.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Coklat Kacang Batangan</h3>
+            <div class="price">Rp. 20.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/cake6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Chocolate Flower Cake</h3>
+            <div class="price">Rp. 78.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/cake7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Kue Bolu Coklat 1</h3>
+            <div class="price">Rp. 55.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/cake8.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Berries Cirus Fruit</h3>
+            <div class="price">Rp. 80.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="images/image1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Kue Bolu 2</h3>
+            <div class="price">Rp. 50.000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Tentang Kami</h1>
+      <p>
+        Selamat Datang di Toko Kue Kami, rumah bagi berbagai macam kue lezat
+        yang dibuat dengan penuh cinta dan dedikasi. Berdiri dengan tujuan
+        menghadirkan kebahagiaan di setiap gigitan, kami menggunakan bahan-bahan
+        berkualitas tinggi dan resep terbaik untuk menciptakan kue yang tidak
+        hanya memanjakan lidah, tetapi juga menyentuh hati.
+      </p>
+    </div>
+    <section class="about">
+      <div class="img">
+        <img src="images/kuc1.jpg" alt="" />
+      </div>
+      <div class="content">
+        <span>Selamat Datang di Produk Kami</span>
+        <h3>Produk yang sangat lezat dan pastinya menggugah selera</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+          pariatur delectus possimus natus odit minus quidem. Officiis,
+          perspiciatis sunt tenetur doloribus accusantium, nam, pariatur quis
+          dicta in ipsa unde minima?
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          eveniet non itaque reprehenderit labore dolorem.
+        </p>
+        <a href="#" class="btn">Selengkapnya</a>
+      </div>
+    </section>
+    <section class="gallery">
+      <h1 class="title">Galeri <span>Kami</span><a href="#">View All>></a></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/kue1.png" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/kue2.png" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/kue3.png" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/kue4.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/kue5.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/kue6.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Quotes for today</h1>
+      <p>
+        "Kue bukan sekadar makanan, tapi karya seni yang bisa kamu nikmati.
+        Rasanya? Sekali coba, pasti jatuh cinta!"
+      </p>
+      <p>
+        "Aroma kue kami lebih menggoda daripada alarm pagi. Yuk, mulai harimu
+        dengan yang manis-manis!"
+      </p>
+      <p>
+        "Kami memang nggak bisa bikin hari Anda jadi lebih panjang, tapi kami
+        bisa bikin harimu lebih manis dan berarti!"
+      </p>
+    </div>
+    <section class="info-container">
+      <div class="info">
+        <img src="images/kirim1.png" alt="" />
+        <div class="content">
+          <h3>Pengiriman Cepat</h3>
+          <span
+            >"Kami memastikan setiap pesanan tiba tepat waktu dengan kualitas
+            terbaik"</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <img src="images/kirim2.png" alt="" />
+        <div class="content">
+          <h3>Change the mood</h3>
+          <span
+            >"Mood booster sederhana? Coba kue lembut dari kami. Manisnya pas,
+            rasanya bikin tenang!"</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <img src="images/kirim3.png" alt="" />
+        <div class="content">
+          <h3>Easy Payment</h3>
+          <span
+            >"Easy payment, easy life! Pesan kue favorit Anda tanpa ribet, bayar
+            cepat, dan langsung kami antar ke rumah Anda."</span
+          >
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="box">
+        <div class="user">
+          <img src="images/kutam1.jpg" alt="" />
+          <div class="info">
+            <h3>Mr Black</h3>
+            <span>Happy Client</span>
+          </div>
+        </div>
+        <p>
+          Saya sangat tertarik dengan kue ini. Kue ini sangat lezat dan
+          menggugah selera. Rasanya yang pas dan teksturnya yang lembut. Saya
+          sangat puas dengan kualitas kue ini.
+        </p>
+      </div>
+      <div class="box">
+        <div class="user">
+          <img src="images/kutam2.jpg" alt="" />
+          <div class="info">
+            <h3>Gerald Thomas</h3>
+            <span>Happy Client</span>
+          </div>
+        </div>
+        <p>
+          Kue ini sangat lezat dan manis. Saya sangat terharu dengan kue ini.
+          Rasanya yang pas dan teksturnya yang lembut. Saya sangat puas dengan
+          kualitas kue ini.
+        </p>
+      </div>
+      <div class="box">
+        <div class="user">
+          <img src="images/kutam3.jpg" alt="" />
+          <div class="info">
+            <h3>Lydia Christine</h3>
+            <span>Happy Client</span>
+          </div>
+        </div>
+        <p>
+          Setiap potongnya hadir seperti sebuah pelukan manis yang siap
+          memanjakan hari Anda. Oleh karena itu, kue ini sangat cocok untuk
+          acara spesial seperti ulang tahun, pernikahan, atau hadiah mewah bagi
+          orang tersayang.
+        </p>
+      </div>
+      <div class="box">
+        <div class="user">
+          <img src="images/kutam4.jpg" alt="" />
+          <div class="info">
+            <h3>Trivia Stephani</h3>
+            <span>Happy Client</span>
+          </div>
+        </div>
+        <p>
+          Kue ini sangat lezat dan manis. Saya sangat terharu dengan kue ini.
+          Rasanya yang pas dan teksturnya yang lembut. Saya sangat puas dengan
+          kualitas kue ini. Dimana kue ini sangat lezat dan manis. Saya sangat
+          terharu dengan kue ini.
+        </p>
+      </div>
+      <div class="box">
+        <div class="user">
+          <img src="images/kutam5.jpg" alt="" />
+          <div class="info">
+            <h3>Juliana Penelope</h3>
+            <span>Happy Client</span>
+          </div>
+        </div>
+        <p>
+          Saya merasa sangat puas dengan kue ini. Rasanya yang pas dan menggugah
+          selera. Anda tidak perlu khawatir, kue ini sangat lezat dan manis.
+          Saya merasa puas dengan kualitas kue ini. Setiap gigitan kembali
+          mengingatkan saya tentang kemewahan.
+        </p>
+      </div>
+    </section>
+
+    <div class="heading">
+      <h1>Apasih keistimewaan kue kami ?</h1>
+      <p>
+        "Dibuat dari bahan-bahan pilihan terbaik, tanpa pengawet, dan selalu
+        fresh setiap hari. Rasa manisnya pas, teksturnya lembut, bikin siapa pun
+        jatuh hati!"
+      </p>
+      <p>
+        "Kami selalu menggunakan bahan segar berkualitas tinggi, diracik dengan
+        resep turun-temurun, dan dibuat dengan penuh perhatian. Rasa yang bikin
+        nagih, kualitas yang tak tertandingi!"
+      </p>
+    </div>
+    <section class="blogs">
+      <h1 class="title">Our <span>Blogs</span><a href="#">View All>></a></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="img">
+            <img src="images/blog1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"
+                ><i class="fas fa-calendar"></i><span>15 Des 2024</span></a
+              >
+              <a href="#"
+                ><i class="fas fa-user user"></i><span>Admininstator</span></a
+              >
+            </div>
+            <h3>Red Velvet Cake</h3>
+            <p>
+              Lembut, manis dan memikat. Kue ini perpaduan sempurna antara
+              kelembutan tekstur kue dan krim lembut yang meleleh di mulut.
+              Setiap potongnya hadir seperti sebuah pelukan manis yang siap
+              memanjakan hari Anda. 🌹
+            </p>
+            <div class="button-container">
+              <a href="#" class="btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/cake3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"
+                ><i class="fas fa-calendar"></i><span>15 Des 2024</span></a
+              >
+              <a href="#"
+                ><i class="fas fa-user"></i><span>Administator</span></a
+              >
+            </div>
+            <h3>Mirror Glaze Cake</h3>
+            <p>
+              Lapisan luar kuenya diberi efek kaca yang mengilap. Perpaduan
+              warna merah berani dengan cokelat dan elemen dekoratif lainnya
+              memberikan kesan istimewa dan premium. Sangat cocok untuk acara
+              spesial seperti ulang tahun, pernikahan, atau hadiah mewah bagi
+              orang tersayang. ✨🍰
+            </p>
+            <a href="#" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/blog3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"
+                ><i class="fas fa-calendar"></i><span>15 Des 2024</span></a
+              >
+              <a href="#"
+                ><i class="fas fa-user"></i><span>Administator</span></a
+              >
+            </div>
+            <h3>Gourmet Chocolate Cake</h3>
+            <p>
+              Sebuah mahakarya rasa yang meleleh di setiap gigitan. Dibuat dari
+              coklat berkualitas tinggi, teksturnya yang lembut berpadu dengan
+              aroma coklat yang kaya akan memanjakan lidah Anda hingga gigitan
+              terakhir. ✨
+            </p>
+            <div class="button-container">
+              <a href="#" class="btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>"Hubungi Kami, Kami Siap Membantu!"</h1>
+      <p>
+        Punya pertanyaan, ingin memesan kue, atau butuh konsultasi untuk acara
+        spesial? Tim kami siap melayani Anda dengan sepenuh hati!
+      </p>
+    </div>
+    <section class="contact">
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>0878-1634-5518</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>gTm6Z@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
+          <p>Bandung, Jawa Barat</p>
+        </div>
+      </div>
+      <div class="row">
+        <form action="">
+          <h3>Get In Touch</h3>
+          <div class="inputBox">
+            <input type="text" placeholder="Enter your name" class="box" />
+            <input type="number" placeholder="Enter your phone" class="box" />
+          </div>
+          <div class="inputBox">
+            <input type="email" placeholder="Enter your email" class="box" />
+            <input type="text" placeholder="Enter your subject" class="box" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="box message"
+            placeholder="message"
+          ></textarea>
+          <button type="submit" class="btn-submit">
+            Send <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.1303314773977!2d109.70206942411869!3d-7.6691346259021795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ac9d14f76c8b9%3A0x37376be662cd12b!2sBandung%20Selatan%2C%20Bandung%2C%20Kec.%20Kebumen%2C%20Kabupaten%20Kebumen%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1734410757803!5m2!1sid!2sid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <div class="space"></div>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> About </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Shop </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Contact </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Review </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Blogs"></a>
+        </div>
+        <div class="box">
+          <h3>Extra Links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> My Account </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> My Order </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> My Favorite </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> My Cart </a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> Pinterest </a>
+        </div>
+        <div class="box">
+          <h3>Newslatter</h3>
+          <p>Subscribe for latest updates</p>
+          <form action="">
+            <input type="email" placeholder="Enter your email" class="email" />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+          <img src="images/card.png" alt="" class="payments" />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
